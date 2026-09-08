@@ -21,7 +21,12 @@ Customer churn is one of the most critical metrics for SaaS companies. This proj
 
 ## 🖼️ Dashboard Preview
 
-![SaaS Churn Dashboard Overview](https://github.com/Vaishnavi698/saas-churn-retention-dashboard/raw/main/image_f3f461.jpg)
+<table>
+  <tr>
+    <td><img src="dashboard_part1.jpg" width="400"></td>
+    <td><img src="dashboard_part2.jpg" width="400"></td>
+  </tr>
+</table>
 
 *Interactive Streamlit dashboard displaying key metrics ($456K MRR, 26.6% avg churn risk), customer risk segmentation donut chart, and tenure vs. churn risk scatter plots.*
 
