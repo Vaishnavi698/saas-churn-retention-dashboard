@@ -1,0 +1,94 @@
+# 📊 SAAS CUSTOMER CHURN & RETENTION ANALYTICS DASHBOARD
+
+AN END-TO-END MACHINE LEARNING, SQL, AND STREAMLIT ANALYTICS APPLICATION DESIGNED TO PREDICT SAAS CUSTOMER CHURN, SEGMENT RISK PROFILES, AND VISUALIZE KEY CUSTOMER RETENTION METRICS.
+
+---
+
+## 📌 PROJECT OVERVIEW
+
+CUSTOMER CHURN IS ONE OF THE MOST CRITICAL METRICS FOR SAAS COMPANIES. THIS PROJECT PROVIDES AN END-TO-END DATA PIPELINE THAT TRANSFORMS RAW CUSTOMER USAGE AND BILLING DATA INTO ACTIONABLE RETENTION STRATEGIES THROUGH:
+* **PREDICTIVE ML MODELING**: MACHINE LEARNING PIPELINE USING LOGISTIC REGRESSION / RANDOM FOREST TO CALCULATE INDIVIDUAL CUSTOMER CHURN PROBABILITIES.
+* **SQL COHORT ANALYTICS**: SQLITE QUERIES FOR COHORT RETENTION ANALYSIS, CONTRACT-LEVEL AGGREGATIONS, AND REVENUE RISK METRICS.
+* **INTERACTIVE DASHBOARD**: A MULTI-CHART STREAMLIT DASHBOARD BUILT WITH PLOTLY FOR REAL-TIME RISK FILTERING AND KPI TRACKING.
+
+---
+
+## 🖼️ DASHBOARD PREVIEW
+
+![SAAS CHURN DASHBOARD OVERVIEW](image_f3f461.jpg)
+
+*INTERACTIVE STREAMLIT DASHBOARD DISPLAYING KEY METRICS ($456K MRR, 26.6% AVG CHURN RISK), CUSTOMER RISK SEGMENTATION DONUT CHART, AND TENURE VS. CHURN RISK SCATTER PLOTS.*
+
+---
+
+## 📁 REPOSITORY STRUCTURE & FILE DESCRIPTIONS
+
+| FILE / FOLDER | TYPE | DESCRIPTION |
+| :--- | :--- | :--- |
+| `churn_model.py` | PYTHON SCRIPT | LOADS RAW CUSTOMER DATA, TRAINS THE MACHINE LEARNING MODEL, CALCULATES CHURN PROBABILITIES, AND OUTPUTS `processed_churn_risk.csv`. |
+| `run_queries.py` | PYTHON SCRIPT | CONNECTS TO `churn_analysis.db` SQLITE DATABASE, EXECUTES COHORT SQL QUERIES, AND POPULATES RISK SUMMARY TABLES. |
+| `app.py` | STREAMLIT APP | INTERACTIVE WEB APP FEATURING KPI METRICS, PLOTLY VISUALIZATIONS, CONTRACT/RISK SIDEBAR FILTERS, AND DATA TABLES. |
+| `processed_churn_risk.csv` | DATASET | OUTPUT DATASET CONTAINING RAW FEATURES, PREDICTED `Churn_Probability`, AND CATEGORIZED `Risk_Category`. |
+| `churn_analysis.db` | SQLITE DB | BINARY SQLITE DATABASE CONTAINING RELATIONAL CUSTOMER TABLES AND PRE-COMPUTED COHORT METRICS. |
+
+---
+
+## 🛠️ TECH STACK & REQUIREMENTS
+
+* **LANGUAGE**: PYTHON 3.10+
+* **DATA PROCESSING & ML**: `pandas`, `scikit-learn`, `numpy`
+* **DATABASE**: SQLITE3
+* **WEB & VISUALIZATION**: `streamlit`, `plotly`
+* **VERSION CONTROL**: GIT & GITHUB
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Vaishnavi698/saas-churn-retention-dashboard.git
+cd saas-churn-retention-dashboard
+```
+
+---
+
+## 🔧 How to Run the Pipeline & Launch Dashboard
+
+Run the scripts in the following **exact sequence**:
+
+### Step 1: Train ML Pipeline
+
+```powershell
+python churn_model.py
+```
+
+### Step 2: Populate SQLite Database (creates `churn_analysis.db`)
+
+```powershell
+python run_queries.py
+```
+
+### Step 3: Launch Streamlit Web App
+
+```powershell
+streamlit run app.py
+```
+
+---
+
+## 📌 Quick Reference Commands
+
+| Step | Purpose | Command |
+|------|----------|---------|
+| 1 | Train ML Pipeline | `python churn_model.py` |
+| 2 | Populate SQL Database | `python run_queries.py` |
+| 3 | Launch Streamlit App | `streamlit run app.py` |
+
+---
+
+
+---
