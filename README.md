@@ -1,47 +1,51 @@
-# 📊 SAAS CUSTOMER CHURN & RETENTION ANALYTICS DASHBOARD
+# 📊 SaaS Customer Churn & Retention Analytics Dashboard
 
-AN END-TO-END MACHINE LEARNING, SQL, AND STREAMLIT ANALYTICS APPLICATION DESIGNED TO PREDICT SAAS CUSTOMER CHURN, SEGMENT RISK PROFILES, AND VISUALIZE KEY CUSTOMER RETENTION METRICS.
+**🔗 Repository:** [github.com/Vaishnavi698/saas-churn-retention-dashboard](https://github.com/Vaishnavi698/saas-churn-retention-dashboard)
+**🗓️ Last Updated:** September 2026
 
----
+An end-to-end machine learning, SQL, and Streamlit analytics application designed to predict SaaS customer churn, segment risk profiles, and visualize key customer retention metrics.
 
-## 📌 PROJECT OVERVIEW
-
-CUSTOMER CHURN IS ONE OF THE MOST CRITICAL METRICS FOR SAAS COMPANIES. THIS PROJECT PROVIDES AN END-TO-END DATA PIPELINE THAT TRANSFORMS RAW CUSTOMER USAGE AND BILLING DATA INTO ACTIONABLE RETENTION STRATEGIES THROUGH:
-* **PREDICTIVE ML MODELING**: MACHINE LEARNING PIPELINE USING LOGISTIC REGRESSION / RANDOM FOREST TO CALCULATE INDIVIDUAL CUSTOMER CHURN PROBABILITIES.
-* **SQL COHORT ANALYTICS**: SQLITE QUERIES FOR COHORT RETENTION ANALYSIS, CONTRACT-LEVEL AGGREGATIONS, AND REVENUE RISK METRICS.
-* **INTERACTIVE DASHBOARD**: A MULTI-CHART STREAMLIT DASHBOARD BUILT WITH PLOTLY FOR REAL-TIME RISK FILTERING AND KPI TRACKING.
+**Keywords:** `customer churn prediction` · `saas analytics` · `retention dashboard` · `machine learning` · `logistic regression` · `random forest` · `sql cohort analysis` · `streamlit dashboard` · `plotly visualization` · `python data science` · `churn risk scoring` · `sqlite`
 
 ---
 
-## 🖼️ DASHBOARD PREVIEW
+## 📌 Project Overview
 
-![SAAS CHURN DASHBOARD OVERVIEW](image_f3f461.jpg)
+Customer churn is one of the most critical metrics for SaaS companies. This project provides an end-to-end data pipeline that transforms raw customer usage and billing data into actionable retention strategies through:
 
-*INTERACTIVE STREAMLIT DASHBOARD DISPLAYING KEY METRICS ($456K MRR, 26.6% AVG CHURN RISK), CUSTOMER RISK SEGMENTATION DONUT CHART, AND TENURE VS. CHURN RISK SCATTER PLOTS.*
-
----
-
-## 📁 REPOSITORY STRUCTURE & FILE DESCRIPTIONS
-
-| FILE / FOLDER | TYPE | DESCRIPTION |
-| :--- | :--- | :--- |
-| `churn_model.py` | PYTHON SCRIPT | LOADS RAW CUSTOMER DATA, TRAINS THE MACHINE LEARNING MODEL, CALCULATES CHURN PROBABILITIES, AND OUTPUTS `processed_churn_risk.csv`. |
-| `run_queries.py` | PYTHON SCRIPT | CONNECTS TO `churn_analysis.db` SQLITE DATABASE, EXECUTES COHORT SQL QUERIES, AND POPULATES RISK SUMMARY TABLES. |
-| `app.py` | STREAMLIT APP | INTERACTIVE WEB APP FEATURING KPI METRICS, PLOTLY VISUALIZATIONS, CONTRACT/RISK SIDEBAR FILTERS, AND DATA TABLES. |
-| `processed_churn_risk.csv` | DATASET | OUTPUT DATASET CONTAINING RAW FEATURES, PREDICTED `Churn_Probability`, AND CATEGORIZED `Risk_Category`. |
-| `churn_analysis.db` | SQLITE DB | BINARY SQLITE DATABASE CONTAINING RELATIONAL CUSTOMER TABLES AND PRE-COMPUTED COHORT METRICS. |
+- **Predictive ML Modeling** — machine learning pipeline using Logistic Regression / Random Forest to calculate individual customer churn probabilities.
+- **SQL Cohort Analytics** — SQLite queries for cohort retention analysis, contract-level aggregations, and revenue risk metrics.
+- **Interactive Dashboard** — a multi-chart Streamlit dashboard built with Plotly for real-time risk filtering and KPI tracking.
 
 ---
 
-## 🛠️ TECH STACK & REQUIREMENTS
+## 🖼️ Dashboard Preview
 
-* **LANGUAGE**: PYTHON 3.10+
-* **DATA PROCESSING & ML**: `pandas`, `scikit-learn`, `numpy`
-* **DATABASE**: SQLITE3
-* **WEB & VISUALIZATION**: `streamlit`, `plotly`
-* **VERSION CONTROL**: GIT & GITHUB
+![SaaS Churn Dashboard Overview](https://github.com/Vaishnavi698/saas-churn-retention-dashboard/raw/main/image_f3f461.jpg)
 
+*Interactive Streamlit dashboard displaying key metrics ($456K MRR, 26.6% avg churn risk), customer risk segmentation donut chart, and tenure vs. churn risk scatter plots.*
 
+---
+
+## 📁 Repository Structure & File Descriptions
+
+| File / Folder | Type | Description |
+|---|---|---|
+| `churn_model.py` | Python Script | Loads raw customer data, trains the machine learning model, calculates churn probabilities, and outputs `processed_churn_risk.csv`. |
+| `run_queries.py` | Python Script | Connects to `churn_analysis.db` SQLite database, executes cohort SQL queries, and populates risk summary tables. |
+| `app.py` | Streamlit App | Interactive web app featuring KPI metrics, Plotly visualizations, contract/risk sidebar filters, and data tables. |
+| `processed_churn_risk.csv` | Dataset | Output dataset containing raw features, predicted `Churn_Probability`, and categorized `Risk_Category`. |
+| `churn_analysis.db` | SQLite DB | Binary SQLite database containing relational customer tables and pre-computed cohort metrics. |
+
+---
+
+## 🛠️ Tech Stack & Requirements
+
+- **Language:** Python 3.10+
+- **Data Processing & ML:** `pandas`, `scikit-learn`, `numpy`
+- **Database:** SQLite3
+- **Web & Visualization:** `streamlit`, `plotly`
+- **Version Control:** Git & GitHub
 
 ---
 
@@ -87,8 +91,5 @@ streamlit run app.py
 | 1 | Train ML Pipeline | `python churn_model.py` |
 | 2 | Populate SQL Database | `python run_queries.py` |
 | 3 | Launch Streamlit App | `streamlit run app.py` |
-
----
-
 
 ---
